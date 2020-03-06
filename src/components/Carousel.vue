@@ -7,8 +7,6 @@
                  controls
                  fade
                  indicators
-                 img-width="1024"
-                 img-height="480"
                  background="#ababab"
                  style="text-shadow: 1px 1px 2px #333"
                  >
@@ -39,17 +37,25 @@
         </b-jumbotron>
     </section>
     <section>
-        <b-container fluid="sm" class="bv-example-row">
-            <b-row>
-                <b-col>Column1</b-col>
-                <b-col>Column1</b-col>
-                <b-col>Column1</b-col>
+        <b-container fluid class="text-light text-left">
+            <b-row class="mb-6">
+                <b-col md="6" class="p-3 bg-dark">
+                    <img src="https://cdn.glitch.com/205bdfe9-5f43-4464-affa-fe6b82c8f534%2Fcarousel-2.png?v=1583419900328" height="600px" width="900px" alt="">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequuntur tempora recusandae quam illum delectus obcaecati nobis? Sequi, ipsa perferendis.</p>
+                </b-col>
+                <b-col md="6" class="p-3 bg-dark"> 
+                    <img src="https://cdn.glitch.com/205bdfe9-5f43-4464-affa-fe6b82c8f534%2Fcarousel-2.png?v=1583419900328" height="600px" width="900px" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum autem alias officiis totam cupiditate consectetur officia quo labore suscipit!</p>
+                </b-col>
                 <div class="w-100"></div>
-                <b-col>Column1</b-col>
-                <b-col>Column1</b-col>
-                <b-col>Column1</b-col>
+                <b-col md="6" class="p-3 bg-dark">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequuntur tempora recusandae quam illum delectus obcaecati nobis? Sequi, ipsa perferendis.</p>
+                </b-col>
+                <b-col md="6" class="p-3 bg-dark"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum autem alias officiis totam cupiditate consectetur officia quo labore suscipit!</p>
+                </b-col>
             </b-row>
-            <b-row>
+            <b-row align-v="end">
                 <b-col>Column2</b-col>
                 <b-col>Column2</b-col>
                 <b-col>Column2</b-col>
@@ -57,11 +63,16 @@
             </b-row>
         </b-container>
     </section>
+    <Footer/>
  </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer'
 export default {
+ components:{
+     Footer
+ }
 
 }
 </script>
