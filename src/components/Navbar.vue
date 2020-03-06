@@ -1,7 +1,7 @@
 <template>
     <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+    <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
+        <b-navbar-brand href="#">Xfero</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -31,8 +31,4 @@
 </template>
 
 <style scoped>
- #navbar{
-     padding-left: 30px;
-     padding-right: 30px;
- }
 </style>
